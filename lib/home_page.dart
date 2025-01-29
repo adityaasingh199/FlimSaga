@@ -64,103 +64,6 @@ class HomePageState extends State<HomePage>{
                        TollyBGTap = Color(0xff515053);
 
                        AppData.RecommandedData=[
-                         {
-                           'image': 'asset/image/fighter.jpg',
-                           'name': 'Fighter',
-                           'banner': 'asset/image/fighter_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 5,
-                           'genre': 'Action',
-                           'age': '+16',
-                           'rating': '8.0',
-                           'story':
-                           "A reckless yet brilliant squadron leader and his team of elite fighter pilots face mortal dangers and inner demons as they unite for a deadly mission. Group Captain Rakesh Jai Singh (Rocky) is assigned for a team of fighter pilots called Air Dragons.Which consists of Meenal Rathore (Minni),Sartaj Gill (Taj),Basheer Khan (Bash) and the best fighter pilot Shamsher Pathania (Patty).Rocky and Patty share a grief as he believes a co pilot Naina (Enjay) died due to his negligence and old habits die soon. Patty and Mini come close to each other during their mission and fall in love. On the other end Azhar Akthar an international terrorist plans an attack with Pakistan on Indian Army Base which leads to major loss of lives. But Patty and his team backfire and destroy the Pakistani air base. Aftermath rises a conflict between the two countries where Pakistani's launch another attack on Indian army where Patty,Taj and Bash cross the LOC and enter Pakistani even thou Rocky had instructed not to cross the LOC .Bash and Taj plane crashes and both are termed dead. Rocky then raises and inquiry on Patty for not following instructions but Rocky proves him not guilty and has him transferred to Hyderabad Air Force Academy as an instructor.",
-                           'stream1': 'netflix',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/hritik roshan.jpeg', 'name': 'Hrithik Roshan'},
-                             {'pic': 'asset/image/anil-kapoor.jpeg', 'name': 'Anil Kapoor'},
-                             {'pic': 'asset/image/Deepika.jpg', 'name': 'Deepika Padukone'}
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/RRR.jpg',
-                           'name': 'RRR',
-                           'banner': 'asset/image/RRR_bg.png',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 4.5,
-                           'genre': 'Action',
-                           'age': '+16',
-                           'rating': '7.5',
-                           'story':
-                           "During the British era, Malli, a small tribal girl, is taken away by British governor Scott Buxton and his wife Catherine against the wishes of her mother. Rama Raju is an Indian cop who works for the British army; for him duty comes first, and he is very ruthless to revolutionary Indians but is never given his due by British government. The British government find that a tribal Komaram Bheem, who considers Malli his sister, has started his search for her and could be an obstacle for the British army. The governor and his wife announce a special post for any officer who can bring Bheem to them. Rama Raju decides to take the matters into his own hands and promises the government to bring him in dead or alive. Bheem by now has reached he city in search of Malli and pretends to be a mechanic, Akhtar. During a train accident on a lake he and Rama Raju risk their lives and save a kid and become best of friends. But each man will clash with the other and will thirst for each other's blood in order to complete their missions. In 1920s India, the fearless defender Bheem takes on the formidable task of reuniting an abducted Gond girl with her mother. But with the British colonial rule casting a dark shadow over the land, Bheem must navigate the treacherous streets of Delhi using a new identity. Meanwhile, the ruthless Governor Scott Buxton assigns the hard-as-nails police officer Rama Raju to ferret out a mysterious Gond warrior. As Bheem and Raju cross paths and form an unlikely bond, they embark on a perilous rescue mission, each unaware of the other's true identity. However, a fierce, ultimate confrontation is inevitable. Who will emerge victorious in the battle royal between fire and water.",
-                           'stream1': 'netflix',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/rrr.jpeg', 'name': 'Ram Charan'},
-                             {'pic': 'asset/image/rrr1.jpeg', 'name': 'N. T. Rama Rao Jr.'},
-                             {'pic': 'asset/image/rrr2.jpeg', 'name': 'Alia Bhatt'},
-                             {'pic': 'asset/image/ajay.jpeg', 'name': 'Ajay Devgn'}
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/KGF.jpg',
-                           'name': 'KGF',
-                           'banner': 'asset/image/KGF_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 4.5,
-                           'genre': 'Action',
-                           'age': '+18',
-                           'rating': '8.5',
-                           'story':
-                           "Anand Ingalpai's book El Dorado has been banned by government but a journalist manages to get a copy and interviews him which details events of KGF (Kolar Gold Fields) between 1951 to 2018.In 1951 the government of India discovered ore in state of Mysore on the same day as Raja Krishnappa Bairya was born to a widow Shantamma. Suryavardhan a powerful don kills the officials and leases the land to run Limestone mine but establishes KGF with his associates Andrews, Desai, Bhargav, Guru Pandian and his brother Adheera who heads the security.After Suryavardhan suffers paralysis his son Garuda takes over KGF much to chagrin of Adheera. Suryavardhan's associates now eye KGF and want to kill him Raja now Rocky who came to Bombay as 10 year old boy kid and worked for gold smuggler Shetty has become one of the powerful person.Andrews offers Rocky to come to Bangalore to kill Garuda an in return whole of Bombay will be his.Rocky reaches Bangalore and meets Reena daughter of Desai he misbehaves with her and gets in tiff with Kamal (son of Bhargav) and his men causing huge damage Andrews and Desai don't action on this as only Rocky can kill Garuda.During a felicitation ceremony Rocky tries to assault Garuda but tight security permits him.Andrews and Desai believe that they have chosen the wrong person and want Rocky to return back to Bombay. But Rocky tells them that he is here to kill Garuda and will do it and the only way to kill him is by entering KGF.",
-                           'stream1': 'hotstar',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/rocky.jpg', 'name': 'Yash'},
-                             {'pic': 'asset/image/srinidhi shetty.jpg', 'name': 'Srinidhi Shetty'}
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/3idiot.jpg',
-                           'name': '3 idiot',
-                           'banner': 'asset/image/3idiot_bg.jpg',
-                           'duration': '4h, 10min',
-                           'audio': 'Hindi',
-                           'star': 5,
-                           'genre': 'Comedy',
-                           'age': '+16',
-                           'rating': '8.9',
-                           'story': "Rancho is an engineering student. His two friends. Farhan and Raju, Rancho sees the world in a different way. Rancho goes somewhere one day. And his friends find him. When Rancho is found, he has become one of a great scientist in the world.Farhan and Raju find from their biggest college rival Chatur that their missing friend Ranchoddas (Rancho) has been traced.The trio start their journey to find him where flashback revels Rancho,Raju and Farhan were engineering students and Rancho always believed that a person should be capable rather then being a bookworm and it will be way to success.He always got in tiff with Chatur and college director Viru Sahastrabuddhe (Virus) but fell in love with his daughter Pia.Things were going fine for them as they also cleared their first year exams in present day they reach house of Rancho where they find his father has passed away and the person who claims to be Rancho is someone else.When the trio find out that where is rancho? They immediately rush to his house. But got shocked after seeing it's not the one who they are expecting it's someone else. The real Rancho. The trio threatened him to tell where is their friend. Finally they found rancho(Amir Khan). And he was living in a lakeside. Being a teacher. Pia runs to him and kissed him and confessed her love. And then then raju and faran also reach there. The hug each other. Then pia ask him his real name. He reply's the greatest scientist whom chatur is searching desperately. Chatur also reach there and he tells that he is the winner of the bet so he deserves the pen which given to Rancho by Virus. When he was about to go Rancho (phunsukh wangdoo) calls chatur and he realized that who is Rancho. So he except that he (Rancho) is the winner. After they lived happily ever after. ",
-                           'stream1': 'netflix',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/ammir khan.jpeg', 'name': 'Amir Khan'},
-                             {'pic': 'asset/image/3 idiot.jpeg', 'name': 'Sharman Joshi'},
-                             {'pic': 'asset/image/3 idiot1.jpeg', 'name': 'R. Madhavan'},
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/PK.jpg',
-                           'name': 'PK',
-                           'banner': 'asset/image/PK_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 4.5,
-                           'genre': 'Action',
-                           'age': '+18',
-                           'rating': '7.5',
-                           'story': "PK the alien being, a gentle one who encounters the other side of God and religion on earth, in India. He comes across as a simpleton, an innocent being who represents his kind from a distant planet. He meets Jaggu, Anushka Sharma, an the plot unravels soon. Of how the contemporary society has been taken over dogmatic preachers from all major religions. Of how the universal message of God is forgotten and of how people are manipulated by the so-called religious leaders, aptly called as Managers by PK. The movie is symbolic of how convoluted our belief system is, be it Hinduism, Islam or Christianity.An alien from a distant galaxy, drops in on our planet Earth to study the inhabitants. What he encounters here, surprises him. It's about how major religions in contemporary religions have been hijacked by religious zealots, whom he, PK calls as Managers.A human like Alien from a distant civilization arrives on the earth to conduct a research for his people. Within few minutes of his arrival, his remote control to his spaceship gets stolen and he gets stranded on the earth. Now how should he go about finding his remote control in a completely alien world? The only unanimous advice he seems to receive from the people of the earth is that only God could help him. Not having any clue about the concept of God, he sets off on his mission to search for him. He comes across different religions with different Gods which only help him to fall into a confusion. What God should he follow? Which religion does he belong to? Will he ever find God? Will he get to get back to his home?PK is an Alien who visits earth to understand about its 'intelligent' inhabitants, but the very first lesson is a painful one when the remote control of his spaceship is stolen. Hence he now faces myriads of problem in a planet where he is alone unaware and can't even speak its language. But he is helped by a noble soul named Bhairon Singh and hence his search takes him from Rajasthan to Delhi. Here he learns that his remote control can only be returned to him by the heavenly intervention and from here on his tangle with the 'organized religion' starts as he tries various religious solutions but when all of them fails he not only criticizes them as a tool used by the 'managers' of religion to exploit the helpless but also seek refund and in the end redefines religion as something which is Rational , Compassionate and Humane , Not the Superstitious , Hateful, and Heartless one currently propagated to the masses which he calls as the 'Wrong Number'.An alien lands at a remote place in India where a thief steals his locket and he can't board back the spaceship without it.While in Belgium an Indian girl Jaggu falls in love with Pakistani boy Sarfraaz they decide to marry against their parents wishes but Sarfraaz does not turn up on wedding day.Jaggu returns to India and works for a news channel she sees the alien who now calls himself PK and is in search of God.Jaggu decides to cover his story which is unbelievable,Pk tells her that he has been to all religious places and prayed to God to return his locket but no God has heard him .He across Tapasvi Maharaj who has the locket and cons people by telling it as a religious article belonging to lord Shankar.Pk and Jaggu decide to expose him and many other such god men of other religions who have made religion as their business.",
-                           'stream1': 'netflix',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/ammir khan.jpeg', 'name': 'Amir Khan'},
-                             {'pic': 'asset/image/anushka sharma.jpeg', 'name': 'Anushka Sharma'},
-                           ]
-                         },
                          {'image': 'asset/image/Lapata Ladies.jpg', 'name': 'Lapata Ladies',
                            'banner': 'asset/image/Lapata Ladies_bg.jpg',
                            'duration': '3h, 46min',
@@ -473,6 +376,84 @@ class HomePageState extends State<HomePage>{
                              {'pic': 'asset/image/tumbbad.jpeg', 'name': 'Sohum Shah'},
                              {'pic': 'asset/image/tumbbad1.jpeg', 'name': 'Jyoti Malshe'},
                            ]},
+                         {
+                           'image': 'asset/image/fighter.jpg',
+                           'name': 'Fighter',
+                           'banner': 'asset/image/fighter_bg.jpg',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 5,
+                           'genre': 'Action',
+                           'age': '+16',
+                           'rating': '8.0',
+                           'story':
+                           "A reckless yet brilliant squadron leader and his team of elite fighter pilots face mortal dangers and inner demons as they unite for a deadly mission. Group Captain Rakesh Jai Singh (Rocky) is assigned for a team of fighter pilots called Air Dragons.Which consists of Meenal Rathore (Minni),Sartaj Gill (Taj),Basheer Khan (Bash) and the best fighter pilot Shamsher Pathania (Patty).Rocky and Patty share a grief as he believes a co pilot Naina (Enjay) died due to his negligence and old habits die soon. Patty and Mini come close to each other during their mission and fall in love. On the other end Azhar Akthar an international terrorist plans an attack with Pakistan on Indian Army Base which leads to major loss of lives. But Patty and his team backfire and destroy the Pakistani air base. Aftermath rises a conflict between the two countries where Pakistani's launch another attack on Indian army where Patty,Taj and Bash cross the LOC and enter Pakistani even thou Rocky had instructed not to cross the LOC .Bash and Taj plane crashes and both are termed dead. Rocky then raises and inquiry on Patty for not following instructions but Rocky proves him not guilty and has him transferred to Hyderabad Air Force Academy as an instructor.",
+                           'stream1': 'netflix',
+                           'stream2': 'prime',
+                           'actors': [
+                             {'pic': 'asset/image/hritik roshan.jpeg', 'name': 'Hrithik Roshan'},
+                             {'pic': 'asset/image/anil-kapoor.jpeg', 'name': 'Anil Kapoor'},
+                             {'pic': 'asset/image/Deepika.jpg', 'name': 'Deepika Padukone'}
+                           ]
+                         },
+                         {
+                           'image': 'asset/image/RRR.jpg',
+                           'name': 'RRR',
+                           'banner': 'asset/image/RRR_bg.png',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 4.5,
+                           'genre': 'Action',
+                           'age': '+16',
+                           'rating': '7.5',
+                           'story':
+                           "During the British era, Malli, a small tribal girl, is taken away by British governor Scott Buxton and his wife Catherine against the wishes of her mother. Rama Raju is an Indian cop who works for the British army; for him duty comes first, and he is very ruthless to revolutionary Indians but is never given his due by British government. The British government find that a tribal Komaram Bheem, who considers Malli his sister, has started his search for her and could be an obstacle for the British army. The governor and his wife announce a special post for any officer who can bring Bheem to them. Rama Raju decides to take the matters into his own hands and promises the government to bring him in dead or alive. Bheem by now has reached he city in search of Malli and pretends to be a mechanic, Akhtar. During a train accident on a lake he and Rama Raju risk their lives and save a kid and become best of friends. But each man will clash with the other and will thirst for each other's blood in order to complete their missions. In 1920s India, the fearless defender Bheem takes on the formidable task of reuniting an abducted Gond girl with her mother. But with the British colonial rule casting a dark shadow over the land, Bheem must navigate the treacherous streets of Delhi using a new identity. Meanwhile, the ruthless Governor Scott Buxton assigns the hard-as-nails police officer Rama Raju to ferret out a mysterious Gond warrior. As Bheem and Raju cross paths and form an unlikely bond, they embark on a perilous rescue mission, each unaware of the other's true identity. However, a fierce, ultimate confrontation is inevitable. Who will emerge victorious in the battle royal between fire and water.",
+                           'stream1': 'netflix',
+                           'stream2': 'prime',
+                           'actors': [
+                             {'pic': 'asset/image/rrr.jpeg', 'name': 'Ram Charan'},
+                             {'pic': 'asset/image/rrr1.jpeg', 'name': 'N. T. Rama Rao Jr.'},
+                             {'pic': 'asset/image/rrr2.jpeg', 'name': 'Alia Bhatt'},
+                             {'pic': 'asset/image/ajay.jpeg', 'name': 'Ajay Devgn'}
+                           ]
+                         },
+                         {
+                           'image': 'asset/image/3idiot.jpg',
+                           'name': '3 idiot',
+                           'banner': 'asset/image/3idiot_bg.jpg',
+                           'duration': '4h, 10min',
+                           'audio': 'Hindi',
+                           'star': 5,
+                           'genre': 'Comedy',
+                           'age': '+16',
+                           'rating': '8.9',
+                           'story': "Rancho is an engineering student. His two friends. Farhan and Raju, Rancho sees the world in a different way. Rancho goes somewhere one day. And his friends find him. When Rancho is found, he has become one of a great scientist in the world.Farhan and Raju find from their biggest college rival Chatur that their missing friend Ranchoddas (Rancho) has been traced.The trio start their journey to find him where flashback revels Rancho,Raju and Farhan were engineering students and Rancho always believed that a person should be capable rather then being a bookworm and it will be way to success.He always got in tiff with Chatur and college director Viru Sahastrabuddhe (Virus) but fell in love with his daughter Pia.Things were going fine for them as they also cleared their first year exams in present day they reach house of Rancho where they find his father has passed away and the person who claims to be Rancho is someone else.When the trio find out that where is rancho? They immediately rush to his house. But got shocked after seeing it's not the one who they are expecting it's someone else. The real Rancho. The trio threatened him to tell where is their friend. Finally they found rancho(Amir Khan). And he was living in a lakeside. Being a teacher. Pia runs to him and kissed him and confessed her love. And then then raju and faran also reach there. The hug each other. Then pia ask him his real name. He reply's the greatest scientist whom chatur is searching desperately. Chatur also reach there and he tells that he is the winner of the bet so he deserves the pen which given to Rancho by Virus. When he was about to go Rancho (phunsukh wangdoo) calls chatur and he realized that who is Rancho. So he except that he (Rancho) is the winner. After they lived happily ever after. ",
+                           'stream1': 'netflix',
+                           'stream2': 'prime',
+                           'actors': [
+                             {'pic': 'asset/image/ammir khan.jpeg', 'name': 'Amir Khan'},
+                             {'pic': 'asset/image/3 idiot.jpeg', 'name': 'Sharman Joshi'},
+                             {'pic': 'asset/image/3 idiot1.jpeg', 'name': 'R. Madhavan'},
+                           ]
+                         },
+                         {
+                           'image': 'asset/image/PK.jpg',
+                           'name': 'PK',
+                           'banner': 'asset/image/PK_bg.jpg',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 4.5,
+                           'genre': 'Action',
+                           'age': '+18',
+                           'rating': '7.5',
+                           'story': "PK the alien being, a gentle one who encounters the other side of God and religion on earth, in India. He comes across as a simpleton, an innocent being who represents his kind from a distant planet. He meets Jaggu, Anushka Sharma, an the plot unravels soon. Of how the contemporary society has been taken over dogmatic preachers from all major religions. Of how the universal message of God is forgotten and of how people are manipulated by the so-called religious leaders, aptly called as Managers by PK. The movie is symbolic of how convoluted our belief system is, be it Hinduism, Islam or Christianity.An alien from a distant galaxy, drops in on our planet Earth to study the inhabitants. What he encounters here, surprises him. It's about how major religions in contemporary religions have been hijacked by religious zealots, whom he, PK calls as Managers.A human like Alien from a distant civilization arrives on the earth to conduct a research for his people. Within few minutes of his arrival, his remote control to his spaceship gets stolen and he gets stranded on the earth. Now how should he go about finding his remote control in a completely alien world? The only unanimous advice he seems to receive from the people of the earth is that only God could help him. Not having any clue about the concept of God, he sets off on his mission to search for him. He comes across different religions with different Gods which only help him to fall into a confusion. What God should he follow? Which religion does he belong to? Will he ever find God? Will he get to get back to his home?PK is an Alien who visits earth to understand about its 'intelligent' inhabitants, but the very first lesson is a painful one when the remote control of his spaceship is stolen. Hence he now faces myriads of problem in a planet where he is alone unaware and can't even speak its language. But he is helped by a noble soul named Bhairon Singh and hence his search takes him from Rajasthan to Delhi. Here he learns that his remote control can only be returned to him by the heavenly intervention and from here on his tangle with the 'organized religion' starts as he tries various religious solutions but when all of them fails he not only criticizes them as a tool used by the 'managers' of religion to exploit the helpless but also seek refund and in the end redefines religion as something which is Rational , Compassionate and Humane , Not the Superstitious , Hateful, and Heartless one currently propagated to the masses which he calls as the 'Wrong Number'.An alien lands at a remote place in India where a thief steals his locket and he can't board back the spaceship without it.While in Belgium an Indian girl Jaggu falls in love with Pakistani boy Sarfraaz they decide to marry against their parents wishes but Sarfraaz does not turn up on wedding day.Jaggu returns to India and works for a news channel she sees the alien who now calls himself PK and is in search of God.Jaggu decides to cover his story which is unbelievable,Pk tells her that he has been to all religious places and prayed to God to return his locket but no God has heard him .He across Tapasvi Maharaj who has the locket and cons people by telling it as a religious article belonging to lord Shankar.Pk and Jaggu decide to expose him and many other such god men of other religions who have made religion as their business.",
+                           'stream1': 'netflix',
+                           'stream2': 'prime',
+                           'actors': [
+                             {'pic': 'asset/image/ammir khan.jpeg', 'name': 'Amir Khan'},
+                             {'pic': 'asset/image/anushka sharma.jpeg', 'name': 'Anushka Sharma'},
+                           ]
+                         },
                          {'image': 'asset/image/Stree2.jpg', 'name': 'Stree 2',
                            'banner': 'asset/image/Stree2_bg.jpg',
                            'duration': '3h, 46min',
@@ -821,86 +802,6 @@ class HomePageState extends State<HomePage>{
                        ];
                        AppData.ActionData=[
                          {
-                           'image': 'asset/image/Fateh.jpg',
-                           'name': 'Fateh',
-                           'banner': 'asset/image/Fateh_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 4,
-                           'genre': 'Action',
-                           'age': '+18',
-                           'rating': '7.9',
-                           'story':
-                           "Follows a former gangster who is hired to guard a young woman named Khushi. In order to keep her safe, Fateh must employ all of his abilities while simultaneously attempting to learn the truth about the threats made against her. Fateh, a mystery man who believes he has left his past behind him, devotes himself to starting a tranquil new life in Punjab. However, when a local girl falls victim to cyber mafia and goes missing in Delhi, he is unable to walk away. With his powerful skills, Fateh emerges from self-imposed retirement as an avenging angel, determined to bring down the entire cyber mafia syndicate.",
-                           'stream1': 'netflix',
-                           'stream2': 'hotstar',
-                           'actors': [
-                             {'pic': 'asset/image/sonu_sood.jpg', 'name': 'Sonu Sood'},
-                             {
-                               'pic': 'asset/image/Jacqueline Fernandez.jpg',
-                               'name': 'Jacqueline Fernandez'
-                             }
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/fighter.jpg',
-                           'name': 'Fighter',
-                           'banner': 'asset/image/fighter_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 5,
-                           'genre': 'Action',
-                           'age': '+16',
-                           'rating': '8.0',
-                           'story':
-                           "A reckless yet brilliant squadron leader and his team of elite fighter pilots face mortal dangers and inner demons as they unite for a deadly mission. Group Captain Rakesh Jai Singh (Rocky) is assigned for a team of fighter pilots called Air Dragons.Which consists of Meenal Rathore (Minni),Sartaj Gill (Taj),Basheer Khan (Bash) and the best fighter pilot Shamsher Pathania (Patty).Rocky and Patty share a grief as he believes a co pilot Naina (Enjay) died due to his negligence and old habits die soon. Patty and Mini come close to each other during their mission and fall in love. On the other end Azhar Akthar an international terrorist plans an attack with Pakistan on Indian Army Base which leads to major loss of lives. But Patty and his team backfire and destroy the Pakistani air base. Aftermath rises a conflict between the two countries where Pakistani's launch another attack on Indian army where Patty,Taj and Bash cross the LOC and enter Pakistani even thou Rocky had instructed not to cross the LOC .Bash and Taj plane crashes and both are termed dead. Rocky then raises and inquiry on Patty for not following instructions but Rocky proves him not guilty and has him transferred to Hyderabad Air Force Academy as an instructor.",
-                           'stream1': 'netflix',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/hritik roshan.jpeg', 'name': 'Hrithik Roshan'},
-                             {'pic': 'asset/image/anil-kapoor.jpeg', 'name': 'Anil Kapoor'},
-                             {'pic': 'asset/image/Deepika.jpg', 'name': 'Deepika Padukone'}
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/KGF.jpg',
-                           'name': 'KGF',
-                           'banner': 'asset/image/KGF_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 4.5,
-                           'genre': 'Action',
-                           'age': '+18',
-                           'rating': '8.5',
-                           'story':
-                           "Anand Ingalpai's book El Dorado has been banned by government but a journalist manages to get a copy and interviews him which details events of KGF (Kolar Gold Fields) between 1951 to 2018.In 1951 the government of India discovered ore in state of Mysore on the same day as Raja Krishnappa Bairya was born to a widow Shantamma. Suryavardhan a powerful don kills the officials and leases the land to run Limestone mine but establishes KGF with his associates Andrews, Desai, Bhargav, Guru Pandian and his brother Adheera who heads the security.After Suryavardhan suffers paralysis his son Garuda takes over KGF much to chagrin of Adheera. Suryavardhan's associates now eye KGF and want to kill him Raja now Rocky who came to Bombay as 10 year old boy kid and worked for gold smuggler Shetty has become one of the powerful person.Andrews offers Rocky to come to Bangalore to kill Garuda an in return whole of Bombay will be his.Rocky reaches Bangalore and meets Reena daughter of Desai he misbehaves with her and gets in tiff with Kamal (son of Bhargav) and his men causing huge damage Andrews and Desai don't action on this as only Rocky can kill Garuda.During a felicitation ceremony Rocky tries to assault Garuda but tight security permits him.Andrews and Desai believe that they have chosen the wrong person and want Rocky to return back to Bombay. But Rocky tells them that he is here to kill Garuda and will do it and the only way to kill him is by entering KGF.",
-                           'stream1': 'hotstar',
-                           'stream2': 'prime',
-                           'actors': [
-                             {'pic': 'asset/image/rocky.jpg', 'name': 'Yash'},
-                             {'pic': 'asset/image/srinidhi shetty.jpg', 'name': 'Srinidhi Shetty'}
-                           ]
-                         },
-                         {
-                           'image': 'asset/image/Kill.jpg',
-                           'name': 'Kill',
-                           'banner': 'asset/image/Kill_bg.jpg',
-                           'duration': '3h, 46min',
-                           'audio': 'Hindi',
-                           'star': 4,
-                           'genre': 'Action',
-                           'age': '+18',
-                           'rating': '7.2',
-                           'story':
-                           "When army commando Amrit finds out his true love, Tulika, is engaged against her will, he boards a New Delhi-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves led by the ruthless Fani begin to terrorize innocent passengers on his train, Amrit takes them on himself in a death-defying kill-spree to save those around him--turning what should have been a typical commute into an adrenaline-fueled thrill ride.Tulika and Amrit, young star-crossed lovers, see their forbidden romance put to the ultimate test when Tulika's father arranges her engagement and whisks her away on the Ranchi-New Delhi Rajdhani Express. Unwilling to take her dad's decision lying down, elite NSG commando Amrit embarks on a daring mission to stop the arranged marriage, accompanied by his formidable army buddy, Viresh. Instead, their plans take an unexpected turn when a horde of blade-wielding dacoits raids the train, bent on chaos and murder. Now trapped in a confined space with danger lurking in every coach, Amrit must push the limits of hand-to-hand combat to save himself and the passengers. But can a lone soldier driven by love defeat an army of ruthless bandits.",
-                           'stream1': 'netflix',
-                           'stream2': 'hotstar',
-                           'actors': [
-                             {'pic': 'asset/image/lakshya.jpeg', 'name': 'Lakshya'},
-                             {'pic': 'asset/image/tanya-maniktala.jpg', 'name': 'Tanya Maniktala'}
-                           ]
-                         },
-                         {
                            'image': 'asset/image/Marco.jpg',
                            'name': 'Marco',
                            'banner': 'asset/image/Marco_bg.jpg',
@@ -1046,9 +947,10 @@ class HomePageState extends State<HomePage>{
                            'stream1': 'netflix',
                            'stream2': 'prime',
                            'actors': [
-                             {'pic': 'asset/image/salaar.jpeg', 'name': 'Prabhas'},
-                             {'pic': 'asset/image/salaar1.jpeg', 'name': 'Shruti Haasan'},
-                             {'pic': 'asset/image/salaar2.jpeg', 'name': 'Prithviraj Sukumaran'},
+                             {'pic': 'asset/image/prabhas.jpeg', 'name': 'Prabhas'},
+                             {'pic': 'asset/image/shruti hassan.jpeg', 'name': 'Shruti Haasan'},
+                             {'pic': 'asset/image/salaar.jpeg', 'name': 'Prithviraj Sukumaran'},
+                             {'pic': 'asset/image/salaar1.jpeg', 'name': 'Sriya Reddy'},
                            ]
                          },
                          {
@@ -1155,6 +1057,86 @@ class HomePageState extends State<HomePage>{
                              {'pic': 'asset/image/bullet train1.jpeg', 'name': 'Joey King'},
                              {'pic': 'asset/image/bullet train2.jpeg', 'name': 'Karen Fukuhara'},
                            ]},
+                         {
+                           'image': 'asset/image/Fateh.jpg',
+                           'name': 'Fateh',
+                           'banner': 'asset/image/Fateh_bg.jpg',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 4,
+                           'genre': 'Action',
+                           'age': '+18',
+                           'rating': '7.9',
+                           'story':
+                           "Follows a former gangster who is hired to guard a young woman named Khushi. In order to keep her safe, Fateh must employ all of his abilities while simultaneously attempting to learn the truth about the threats made against her. Fateh, a mystery man who believes he has left his past behind him, devotes himself to starting a tranquil new life in Punjab. However, when a local girl falls victim to cyber mafia and goes missing in Delhi, he is unable to walk away. With his powerful skills, Fateh emerges from self-imposed retirement as an avenging angel, determined to bring down the entire cyber mafia syndicate.",
+                           'stream1': 'netflix',
+                           'stream2': 'hotstar',
+                           'actors': [
+                             {'pic': 'asset/image/sonu_sood.jpg', 'name': 'Sonu Sood'},
+                             {
+                               'pic': 'asset/image/Jacqueline Fernandez.jpg',
+                               'name': 'Jacqueline Fernandez'
+                             }
+                           ]
+                         },
+                         {
+                           'image': 'asset/image/fighter.jpg',
+                           'name': 'Fighter',
+                           'banner': 'asset/image/fighter_bg.jpg',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 5,
+                           'genre': 'Action',
+                           'age': '+16',
+                           'rating': '8.0',
+                           'story':
+                           "A reckless yet brilliant squadron leader and his team of elite fighter pilots face mortal dangers and inner demons as they unite for a deadly mission. Group Captain Rakesh Jai Singh (Rocky) is assigned for a team of fighter pilots called Air Dragons.Which consists of Meenal Rathore (Minni),Sartaj Gill (Taj),Basheer Khan (Bash) and the best fighter pilot Shamsher Pathania (Patty).Rocky and Patty share a grief as he believes a co pilot Naina (Enjay) died due to his negligence and old habits die soon. Patty and Mini come close to each other during their mission and fall in love. On the other end Azhar Akthar an international terrorist plans an attack with Pakistan on Indian Army Base which leads to major loss of lives. But Patty and his team backfire and destroy the Pakistani air base. Aftermath rises a conflict between the two countries where Pakistani's launch another attack on Indian army where Patty,Taj and Bash cross the LOC and enter Pakistani even thou Rocky had instructed not to cross the LOC .Bash and Taj plane crashes and both are termed dead. Rocky then raises and inquiry on Patty for not following instructions but Rocky proves him not guilty and has him transferred to Hyderabad Air Force Academy as an instructor.",
+                           'stream1': 'netflix',
+                           'stream2': 'prime',
+                           'actors': [
+                             {'pic': 'asset/image/hritik roshan.jpeg', 'name': 'Hrithik Roshan'},
+                             {'pic': 'asset/image/anil-kapoor.jpeg', 'name': 'Anil Kapoor'},
+                             {'pic': 'asset/image/Deepika.jpg', 'name': 'Deepika Padukone'}
+                           ]
+                         },
+                         {
+                           'image': 'asset/image/KGF.jpg',
+                           'name': 'KGF',
+                           'banner': 'asset/image/KGF_bg.jpg',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 4.5,
+                           'genre': 'Action',
+                           'age': '+18',
+                           'rating': '8.5',
+                           'story':
+                           "Anand Ingalpai's book El Dorado has been banned by government but a journalist manages to get a copy and interviews him which details events of KGF (Kolar Gold Fields) between 1951 to 2018.In 1951 the government of India discovered ore in state of Mysore on the same day as Raja Krishnappa Bairya was born to a widow Shantamma. Suryavardhan a powerful don kills the officials and leases the land to run Limestone mine but establishes KGF with his associates Andrews, Desai, Bhargav, Guru Pandian and his brother Adheera who heads the security.After Suryavardhan suffers paralysis his son Garuda takes over KGF much to chagrin of Adheera. Suryavardhan's associates now eye KGF and want to kill him Raja now Rocky who came to Bombay as 10 year old boy kid and worked for gold smuggler Shetty has become one of the powerful person.Andrews offers Rocky to come to Bangalore to kill Garuda an in return whole of Bombay will be his.Rocky reaches Bangalore and meets Reena daughter of Desai he misbehaves with her and gets in tiff with Kamal (son of Bhargav) and his men causing huge damage Andrews and Desai don't action on this as only Rocky can kill Garuda.During a felicitation ceremony Rocky tries to assault Garuda but tight security permits him.Andrews and Desai believe that they have chosen the wrong person and want Rocky to return back to Bombay. But Rocky tells them that he is here to kill Garuda and will do it and the only way to kill him is by entering KGF.",
+                           'stream1': 'hotstar',
+                           'stream2': 'prime',
+                           'actors': [
+                             {'pic': 'asset/image/rocky.jpg', 'name': 'Yash'},
+                             {'pic': 'asset/image/srinidhi shetty.jpg', 'name': 'Srinidhi Shetty'}
+                           ]
+                         },
+                         {
+                           'image': 'asset/image/Kill.jpg',
+                           'name': 'Kill',
+                           'banner': 'asset/image/Kill_bg.jpg',
+                           'duration': '3h, 46min',
+                           'audio': 'Hindi',
+                           'star': 4,
+                           'genre': 'Action',
+                           'age': '+18',
+                           'rating': '7.2',
+                           'story':
+                           "When army commando Amrit finds out his true love, Tulika, is engaged against her will, he boards a New Delhi-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves led by the ruthless Fani begin to terrorize innocent passengers on his train, Amrit takes them on himself in a death-defying kill-spree to save those around him--turning what should have been a typical commute into an adrenaline-fueled thrill ride.Tulika and Amrit, young star-crossed lovers, see their forbidden romance put to the ultimate test when Tulika's father arranges her engagement and whisks her away on the Ranchi-New Delhi Rajdhani Express. Unwilling to take her dad's decision lying down, elite NSG commando Amrit embarks on a daring mission to stop the arranged marriage, accompanied by his formidable army buddy, Viresh. Instead, their plans take an unexpected turn when a horde of blade-wielding dacoits raids the train, bent on chaos and murder. Now trapped in a confined space with danger lurking in every coach, Amrit must push the limits of hand-to-hand combat to save himself and the passengers. But can a lone soldier driven by love defeat an army of ruthless bandits.",
+                           'stream1': 'netflix',
+                           'stream2': 'hotstar',
+                           'actors': [
+                             {'pic': 'asset/image/lakshya.jpeg', 'name': 'Lakshya'},
+                             {'pic': 'asset/image/tanya-maniktala.jpg', 'name': 'Tanya Maniktala'}
+                           ]
+                         },
                          {'image': 'asset/image/dear-comrade.jpg', 'name': 'dear-comrade',
                            'banner': 'asset/image/dear-comrade.jpg',
                            'duration': '3h, 46min',

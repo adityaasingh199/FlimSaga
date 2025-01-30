@@ -3273,12 +3273,12 @@ class HomePageState extends State<HomePage>{
                 scrollDirection: Axis.horizontal,
                 itemCount: 12,
                 itemBuilder: (_,index){
-                  return InkWell(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.RecommandedData,selectedIndex:index)));
-                    },
-                    child: Container(
-                      margin: EdgeInsets.only(right: 15),
+                  return Padding(
+                    padding: EdgeInsets.only(right: 15),
+                    child: InkWell(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.RecommandedData,selectedIndex:index)));
+                      },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

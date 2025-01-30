@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
           child: Stack(
             children: [
               Container(
-                width: 360,
+                width: double.infinity,
                 height: 210,
                 decoration: BoxDecoration(
                   image: DecorationImage(
@@ -31,7 +31,7 @@ class DetailPage extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: 360,
+                          width: double.infinity,
                           height: 210,
                           child: Stack(
                             children: [
@@ -64,7 +64,7 @@ class DetailPage extends StatelessWidget {
                         ),
                         Container(
                           height: 125,
-                          width: 360,
+                          width: double.infinity,
                           padding:
                               EdgeInsets.only(top: 20, right: 15, left: 15),
                           decoration: BoxDecoration(
@@ -162,7 +162,7 @@ class DetailPage extends StatelessWidget {
                         StatefulBuilder(
                           builder: (_, ss) {
                             return Container(
-                              width: 360,
+                              width: double.infinity,
                               padding:
                               EdgeInsets.only(top: 0, right: 15, left: 15),
                               decoration: BoxDecoration(
@@ -229,7 +229,7 @@ class DetailPage extends StatelessWidget {
                         ),
                         SizedBox(height: 10,),
                         Container(
-                          width: 360,
+                          width: double.infinity,
                           padding:
                           EdgeInsets.only(top: 5, right: 15, left: 15),
                           child: Column(

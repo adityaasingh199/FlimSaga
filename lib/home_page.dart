@@ -77,9 +77,9 @@ class HomePageState extends State<HomePage>{
                            'stream2': 'prime',
                            'actors': [
                              {'pic': 'asset/image/lapata.jpeg', 'name': 'Nitanshi Goel'},
-                             {'pic': 'asset/image/lapata.jpeg1', 'name': 'Pratibha Ranta'},
-                             {'pic': 'asset/image/lapata.jpeg2', 'name': 'Sparsh Shrivastav'},
-                             {'pic': 'asset/image/lapata.jpeg3', 'name': 'Ravi Kishan'},
+                             {'pic': 'asset/image/lapata1.jpeg', 'name': 'Pratibha Ranta'},
+                             {'pic': 'asset/image/lapata2.jpeg', 'name': 'Sparsh Shrivastav'},
+                             {'pic': 'asset/image/lapata3.jpeg', 'name': 'Ravi Kishan'},
                            ]},
                          {'image': 'asset/image/robot.jpg', 'name': 'robot',
                            'banner': 'asset/image/2.0_bg.jpg',
@@ -181,7 +181,7 @@ class HomePageState extends State<HomePage>{
                              {'pic': 'asset/image/drishyam2.jpeg', 'name': 'Ishita'},
                            ]},
                          {'image': 'asset/image/Kalki.jpg', 'name': 'Kalki',
-                           'banner': 'asset/image/1920.jpg',
+                           'banner': 'asset/image/Kalki.jpg',
                            'duration': '3h, 46min',
                            'audio': 'Hindi',
                            'star': 4,
@@ -489,7 +489,7 @@ class HomePageState extends State<HomePage>{
                              {'pic': 'asset/image/3 idiot1.jpeg', 'name': 'R. Madhwan'},
                            ]},
                          {'image': 'asset/image/Kalki.jpg', 'name': 'Kalki',
-                           'banner': 'asset/image/1920.jpg',
+                           'banner': 'asset/image/Kalki.jpg',
                            'duration': '3h, 46min',
                            'audio': 'Hindi',
                            'star': 4,
@@ -1820,9 +1820,9 @@ class HomePageState extends State<HomePage>{
                            'stream2': 'prime',
                            'actors': [
                              {'pic': 'asset/image/lapata.jpeg', 'name': 'Nitanshi Goel'},
-                             {'pic': 'asset/image/lapata.jpeg1', 'name': 'Pratibha Ranta'},
-                             {'pic': 'asset/image/lapata.jpeg2', 'name': 'Sparsh Shrivastav'},
-                             {'pic': 'asset/image/lapata.jpeg3', 'name': 'Ravi Kishan'},
+                             {'pic': 'asset/image/lapata1.jpeg', 'name': 'Pratibha Ranta'},
+                             {'pic': 'asset/image/lapata2.jpeg', 'name': 'Sparsh Shrivastav'},
+                             {'pic': 'asset/image/lapata3.jpeg', 'name': 'Ravi Kishan'},
                            ]},
                          {'image': 'asset/image/Yeh_jawani.jpg', 'name': 'Yeh jawani',
                            'banner': 'asset/image/Yeh_jawani.jpg',
@@ -2802,7 +2802,7 @@ class HomePageState extends State<HomePage>{
                              {'pic': 'asset/image/drishyam2.jpeg', 'name': 'Ishita'},
                            ]},
                          {'image': 'asset/image/Kalki.jpg', 'name': 'Kalki',
-                           'banner': 'asset/image/1920.jpg',
+                           'banner': 'asset/image/Kalki.jpg',
                            'duration': '3h, 46min',
                            'audio': 'Hindi',
                            'star': 4,
@@ -2967,7 +2967,7 @@ class HomePageState extends State<HomePage>{
                              {'pic': 'asset/image/hacked1.jpeg', 'name': 'Ishita Dutta'},
                            ]},
                          {'image': 'asset/image/Kalki.jpg', 'name': 'Kalki',
-                           'banner': 'asset/image/1920.jpg',
+                           'banner': 'asset/image/Kalki.jpg',
                            'duration': '3h, 46min',
                            'audio': 'Hindi',
                            'star': 4,
@@ -3129,13 +3129,13 @@ class HomePageState extends State<HomePage>{
                     },
                     child: Container(
                       height: 40,
-                      width: 58,
+                      width: 56,
 
                       decoration: BoxDecoration(
                           color: HomeBGTap,
                           borderRadius: BorderRadius.circular(5)
                       ),
-                      child: Center(child: Text("Home",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 14,color:HomeTap,),)),
+                      child: Center(child: Text("Home",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 13,color:HomeTap,),)),
                     ),
                   ),
 
@@ -3165,13 +3165,13 @@ class HomePageState extends State<HomePage>{
                     },
                     child: Container(
                       height: 40,
-                      width: 98,
+                      width: 96,
 
                       decoration: BoxDecoration(
                           color: BollyBGTap,
                           borderRadius: BorderRadius.circular(5)
                       ),
-                      child: Center(child: Text("Bollywood",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 14,color:BollyTap,),)),
+                      child: Center(child: Text("Bollywood",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 13,color:BollyTap,),)),
                     ),
                   ),
 
@@ -3202,13 +3202,13 @@ class HomePageState extends State<HomePage>{
                     },
                     child: Container(
                       height: 40,
-                      width: 98,
+                      width: 96,
 
                       decoration: BoxDecoration(
                           color: HollyBGTap,
                           borderRadius: BorderRadius.circular(5)
                       ),
-                      child: Center(child: Text("Hollywood",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 14,color:HollyTap),)),
+                      child: Center(child: Text("Hollywood",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 13,color:HollyTap),)),
                     ),
                   ),
 
@@ -3239,13 +3239,13 @@ class HomePageState extends State<HomePage>{
                     },
                     child: Container(
                       height: 40,
-                      width: 61,
+                      width: 59,
 
                       decoration: BoxDecoration(
                           color: TollyBGTap,
                           borderRadius: BorderRadius.circular(5)
                       ),
-                      child: Center(child: Text("South",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 14,color: TollyTap),)),
+                      child: Center(child: Text("South",style: TextStyle(fontWeight:FontWeight.bold,fontFamily: "Poppins",fontSize: 13,color: TollyTap),)),
                     ),
                   ),
                 ],

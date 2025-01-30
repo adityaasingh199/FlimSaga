@@ -257,7 +257,7 @@ class DetailPage extends StatelessWidget {
                                           fontSize: 15,
                                           color: Colors.white),
                                     ),
-                                    if(SelectedMap[selectedIndex]['stream1']=='hotsar')
+                                    if(SelectedMap[selectedIndex]['stream1']=='hotstar')
                                     Image.asset('asset/image/hotstar.png',height:32,width:32,fit: BoxFit.cover,),
                                     if(SelectedMap[selectedIndex]['stream1']=='netflix')
                                     Image.asset('asset/image/netflix.png',height:40,width:40,fit: BoxFit.cover,),

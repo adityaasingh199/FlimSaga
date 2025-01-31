@@ -12,8 +12,7 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: Color(0xff1F1F29),
-        body: Padding(
-          padding: const EdgeInsets.only(top: 27),
+        body: SafeArea(
           child: Stack(
             children: [
               Container(
@@ -156,9 +155,9 @@ class DetailPage extends StatelessWidget {
                             ],
                           ),
                         ),
-
+          
                         ///Story Container
-
+          
                         StatefulBuilder(
                           builder: (_, ss) {
                             return Container(
@@ -242,9 +241,9 @@ class DetailPage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     color: Color(0xff312F35),
                                     borderRadius: BorderRadius.circular(11)),
-
+          
                                 ///Streaming OTT Platform
-
+          
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -316,6 +315,20 @@ class DetailPage extends StatelessWidget {
                     ),
                   )
                 ],
+              ),
+
+              ///Back Button
+
+              InkWell(
+                onTap: (){
+                  Navigator.pop(context);
+                },
+                child: Container(
+                  padding: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle
+                    ),
+                    child: Icon(Icons.arrow_back_rounded,color: Colors.white,size: 27,)),
               )
             ],
           ),

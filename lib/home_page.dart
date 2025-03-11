@@ -3127,6 +3127,7 @@ class HomePageState extends State<HomePage>{
 
                       });
                     },
+                    splashColor: Colors.transparent,
                     child: Container(
                       height: 40,
                       width: 56,
@@ -3256,8 +3257,11 @@ class HomePageState extends State<HomePage>{
 
               InkWell(
                 onTap: (){
+                  //Future.delayed(Duration(seconds: 5));
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>RecoPage()));
                 },
+                splashColor: Colors.transparent,
+                //highlightColor: Colors.transparent,
                 child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -3279,6 +3283,7 @@ class HomePageState extends State<HomePage>{
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.RecommandedData,selectedIndex:index)));
                       },
+                      splashColor: Colors.transparent,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -3351,6 +3356,7 @@ class HomePageState extends State<HomePage>{
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ActionPage()));
                 },
+                splashColor: Colors.transparent,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -3366,71 +3372,74 @@ class HomePageState extends State<HomePage>{
                     scrollDirection: Axis.horizontal,
                     itemCount: 8,
                     itemBuilder: (_,index){
-                      return InkWell(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.ActionData,selectedIndex:index)));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 15),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                height: 170,
-                                width: 118,
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(image: AssetImage(AppData.ActionData[index]['image']),fit: BoxFit.cover),
-                                    borderRadius: BorderRadius.circular(5)
+                      return Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: InkWell(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.ActionData,selectedIndex:index)));
+                          },
+                          splashColor: Colors.transparent,
+                          child: Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 170,
+                                  width: 118,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage(AppData.ActionData[index]['image']),fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.circular(5)
+                                  ),
                                 ),
-                              ),
-                              Text(AppData.ActionData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
-                              if(AppData.ActionData[index]['star']==3)
-                              Row(
-                                children: [
-                                  Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                ],
-                              ),
-                              if(AppData.ActionData[index]['star']==3.5)
+                                Text(AppData.ActionData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
+                                if(AppData.ActionData[index]['star']==3)
                                 Row(
                                   children: [
                                     Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
                                     Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
                                     Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
                                   ],
                                 ),
-                              if(AppData.ActionData[index]['star']==4)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ActionData[index]['star']==4.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ActionData[index]['star']==5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                            ],
+                                if(AppData.ActionData[index]['star']==3.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ActionData[index]['star']==4)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ActionData[index]['star']==4.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ActionData[index]['star']==5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                              ],
+                            ),
                           ),
                         ),
                       );
@@ -3444,6 +3453,7 @@ class HomePageState extends State<HomePage>{
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ComedyPage()));
                 },
+                splashColor: Colors.transparent,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -3459,71 +3469,74 @@ class HomePageState extends State<HomePage>{
                     scrollDirection: Axis.horizontal,
                     itemCount: 8,
                     itemBuilder: (_,index){
-                      return InkWell(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.ComedyData,selectedIndex:index)));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 15),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                height: 170,
-                                width: 118,
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(image: AssetImage(AppData.ComedyData[index]['image']),fit: BoxFit.cover),
-                                    borderRadius: BorderRadius.circular(5)
+                      return Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: InkWell(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.ComedyData,selectedIndex:index)));
+                          },
+                          splashColor: Colors.transparent,
+                          child: Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 170,
+                                  width: 118,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage(AppData.ComedyData[index]['image']),fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.circular(5)
+                                  ),
                                 ),
-                              ),
-                              Text(AppData.ComedyData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
-                              if(AppData.ComedyData[index]['star']==3)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ComedyData[index]['star']==3.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ComedyData[index]['star']==4)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ComedyData[index]['star']==4.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ComedyData[index]['star']==5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                            ],
+                                Text(AppData.ComedyData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
+                                if(AppData.ComedyData[index]['star']==3)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ComedyData[index]['star']==3.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ComedyData[index]['star']==4)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ComedyData[index]['star']==4.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ComedyData[index]['star']==5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                              ],
+                            ),
                           ),
                         ),
                       );
@@ -3537,6 +3550,7 @@ class HomePageState extends State<HomePage>{
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>DramaPage()));
                 },
+                splashColor: Colors.transparent,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -3552,71 +3566,74 @@ class HomePageState extends State<HomePage>{
                     scrollDirection: Axis.horizontal,
                     itemCount: 8,
                     itemBuilder: (_,index){
-                      return InkWell(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.DramaData,selectedIndex:index)));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 15),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                height: 170,
-                                width: 118,
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(image: AssetImage(AppData.DramaData[index]['image']),fit: BoxFit.cover),
-                                    borderRadius: BorderRadius.circular(5)
+                      return Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: InkWell(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.DramaData,selectedIndex:index)));
+                          },
+                          splashColor: Colors.transparent,
+                          child: Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 170,
+                                  width: 118,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage(AppData.DramaData[index]['image']),fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.circular(5)
+                                  ),
                                 ),
-                              ),
-                              Text(AppData.DramaData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
-                              if(AppData.DramaData[index]['star']==3)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.DramaData[index]['star']==3.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.DramaData[index]['star']==4)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.DramaData[index]['star']==4.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ActionData[index]['star']==5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                            ],
+                                Text(AppData.DramaData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
+                                if(AppData.DramaData[index]['star']==3)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.DramaData[index]['star']==3.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.DramaData[index]['star']==4)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.DramaData[index]['star']==4.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.DramaData[index]['star']==5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                              ],
+                            ),
                           ),
                         ),
                       );
@@ -3630,6 +3647,7 @@ class HomePageState extends State<HomePage>{
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>HorrorPage()));
                 },
+                splashColor: Colors.transparent,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -3645,71 +3663,74 @@ class HomePageState extends State<HomePage>{
                     scrollDirection: Axis.horizontal,
                     itemCount: 8,
                     itemBuilder: (_,index){
-                      return InkWell(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.HorrorData,selectedIndex:index)));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 15),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                height: 170,
-                                width: 118,
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(image: AssetImage(AppData.HorrorData[index]['image']),fit: BoxFit.cover),
-                                    borderRadius: BorderRadius.circular(5)
+                      return Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: InkWell(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.HorrorData,selectedIndex:index)));
+                          },
+                          splashColor: Colors.transparent,
+                          child: Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 170,
+                                  width: 118,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage(AppData.HorrorData[index]['image']),fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.circular(5)
+                                  ),
                                 ),
-                              ),
-                              Text(AppData.HorrorData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
-                              if(AppData.HorrorData[index]['star']==3)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.HorrorData[index]['star']==3.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.HorrorData[index]['star']==4)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.HorrorData[index]['star']==4.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.HorrorData[index]['star']==5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                            ],
+                                Text(AppData.HorrorData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
+                                if(AppData.HorrorData[index]['star']==3)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.HorrorData[index]['star']==3.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.HorrorData[index]['star']==4)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.HorrorData[index]['star']==4.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.HorrorData[index]['star']==5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                              ],
+                            ),
                           ),
                         ),
                       );
@@ -3723,6 +3744,7 @@ class HomePageState extends State<HomePage>{
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ScifiPage()));
                 },
+                splashColor: Colors.transparent,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -3738,71 +3760,74 @@ class HomePageState extends State<HomePage>{
                     scrollDirection: Axis.horizontal,
                     itemCount: 8,
                     itemBuilder: (_,index){
-                      return InkWell(
-                        onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.ScifiData,selectedIndex:index)));
-                        },
-                        child: Container(
-                          margin: EdgeInsets.only(right: 15),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                height: 170,
-                                width: 118,
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(image: AssetImage(AppData.ScifiData[index]['image']),fit: BoxFit.cover),
-                                    borderRadius: BorderRadius.circular(5)
+                      return Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: InkWell(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailPage(SelectedMap:AppData.ScifiData,selectedIndex:index)));
+                          },
+                          splashColor: Colors.transparent,
+                          child: Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  height: 170,
+                                  width: 118,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage(AppData.ScifiData[index]['image']),fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.circular(5)
+                                  ),
                                 ),
-                              ),
-                              Text(AppData.ScifiData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
-                              if(AppData.ScifiData[index]['star']==3)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ScifiData[index]['star']==3.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ScifiData[index]['star']==4)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ScifiData[index]['star']==4.5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                              if(AppData.ScifiData[index]['star']==5)
-                                Row(
-                                  children: [
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                    Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
-                                  ],
-                                ),
-                            ],
+                                Text(AppData.ScifiData[index]['name'],style: TextStyle(fontSize: 11,fontFamily: 'Poppins',color: Colors.white,fontWeight: FontWeight.bold),),
+                                if(AppData.ScifiData[index]['star']==3)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ScifiData[index]['star']==3.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ScifiData[index]['star']==4)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ScifiData[index]['star']==4.5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_half_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                                if(AppData.ScifiData[index]['star']==5)
+                                  Row(
+                                    children: [
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                      Icon(Icons.star_rounded,color: Colors.yellow,size: 19,),
+                                    ],
+                                  ),
+                              ],
+                            ),
                           ),
                         ),
                       );

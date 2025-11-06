@@ -36,7 +36,7 @@ jobs:
         with:
           files: build/app/outputs/flutter-apk/app-release.apk
           tag_name: v${{ github.run_number }}
-          name: "Flutter Build v${{ github.run_number }}"
+          name: "FilmSaga v${{ github.run_number }}"
           body: "Automated release build of Flutter app."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
